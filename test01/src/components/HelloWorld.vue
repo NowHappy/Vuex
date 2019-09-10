@@ -14,6 +14,8 @@
 export default {
   computed: {
     count () {
+      //#1 this.$store 로 접근이 가능한 이유는
+      //store 옵션을 추가했기 때문
       return this.$store.state.count
     }
   },

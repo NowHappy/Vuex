@@ -7,7 +7,7 @@
 
 
 <script>
-import store from '../store/modules/simple-store'
+import store from '../store'
 export default {
   computed: {
     count() {

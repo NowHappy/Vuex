@@ -1,3 +1,23 @@
 div {
     border: 5px solid chocolate;
 }
+
+#app {
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+
+#hello {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%)
+  }
+
+  #hellobro {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%)
+  }
