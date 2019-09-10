@@ -1,5 +1,5 @@
 <template>
-<div id="hello">
+<div id="bro1">
   <h1>Brother1</h1>
   <p>{{ count }}</p>
   <p>
@@ -11,20 +11,20 @@
 
 
 <script>
+import store from '../store'
+
 export default {
   computed: {
-    count () {
-      //#1 this.$store 로 접근이 가능한 이유는
-      //store 옵션을 추가했기 때문
-      return this.$store.state.count
+    count() {
+      return store.state.count
     }
   },
   methods: {
     increment () {
-      this.$store.commit('increment')
+      store.commit('increment')
     },
     decrement () {
-      this.$store.commit('decrement')
+      store.commit('decrement')
     }
   }
 }
