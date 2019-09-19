@@ -8,6 +8,8 @@
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex';
+
 import Todolist from '@/components/Todolist';
 
 export default {
@@ -22,15 +24,7 @@ export default {
     }
   },
   computed: {
-    todoCount() {
-      return this.$store.getters.todoCount
-    },
-    doneTodoCount() {
-      return this.$store.getters.doneTodoCount
-    },
-    totalCount() {
-      return this.$store.getters.totalCount
-    },
+    ...mapGetters(['todoCount', 'doneTodoCount', 'totalCount']),
     totalCountPlus100() {
       return this.$store.getters.totalCountPlus100(this.plusCount)
     },
