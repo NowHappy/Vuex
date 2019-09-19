@@ -3,6 +3,7 @@
     <h1>TODO LIST</h1>
     <p> 리스트 전체 : {{totalCount}} </p>
     <p> 해야할 일 : {{todoCount}} / 완료한 일 : {{doneTodoCount}} </p>
+    <input type="text" v-model="newTodoTitle" /><button @click="addTodo(newTodoTitle)">추가</button>
     <todolist :todos="todos"></todolist>
     <p> 리스트 전체 (+100) : {{totalCountPlus100}} </p>
   </div>
@@ -30,6 +31,12 @@ export default {
     },
     todos() {
       return this.$store.state.todos
+    }
+  },
+  methods: {
+    addTodo(title) {
+      this.$store.commit('addTodo',title);
+      this.newTodoTitle = '';
     }
   }
 };

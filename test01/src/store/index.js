@@ -39,6 +39,21 @@ const store = new Vuex.Store({
         return state.todos.indexOf(todo);
       };
     }
+  },
+  mutations:{
+    addTodo(state, title) {
+      state.todos.push({
+        title: title,
+        completed: false,
+        id: Date.now().toString()
+      })
+    },
+    deleteTodo(state, index) {
+      state.todos.splice(index, 1)
+    },
+    updateTodoTitle (state, {index, title}){
+      state.todos[index].title = title;
+    }
   }
 })
 
