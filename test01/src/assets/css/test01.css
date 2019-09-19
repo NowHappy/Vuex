@@ -1,58 +1,5 @@
-div {
-    border: 5px solid chocolate;
-}
-
 #app {
     position: relative;
     width: 900px;
     height: 1200px;
-  }
-
-#bro1 {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, 0%)
-  }
-
-  #bro2 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 0%)
-  }
-
-  #bro3 {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, 0%)
-  }
-
-  #bro4 {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, 0%)
-  }
-
-  #bro5 {
-    position: absolute;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, 0%)
-  }
-
-  #bro6 {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, 0%)
-  }
-
-  #bro7 {
-    position: absolute;
-    top: 84%;
-    left: 50%;
-    transform: translate(-50%, 0%)
   }
